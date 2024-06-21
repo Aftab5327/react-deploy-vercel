@@ -15,7 +15,7 @@ export const ProductsProvider = ({ children }) => {
     // console.log('encodeName is',encodedName)
     const fetchCategories = async () => {
         try {
-            const response = await axios.get('http://192.168.0.107:8000/categories');
+            const response = await axios.get('https://sas-ecom-backend-mcif.vercel.app/categories');
             setCategories(response.data);
             setLoading(false);
         } catch (error) {
@@ -34,7 +34,7 @@ export const ProductsProvider = ({ children }) => {
                 const productRequests = categories.map((category) => {
                     const encodeName = encodeURIComponent(category.name);
                     // console.log('encode Name is:', encodeName);
-                    return axios.get(`http://192.168.0.107:8000/products/${encodeName}`);
+                    return axios.get(`https://sas-ecom-backend-mcif.vercel.app/products/${encodeName}`);
                 });
         
                 const responses = await Promise.all(productRequests);
