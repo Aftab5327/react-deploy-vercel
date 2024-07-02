@@ -9,10 +9,10 @@ export const Products = () => {
     const [loading, setLoading] = useState(true);
     const fetchData = async () => {
         try {
-            const response = await axios.get('https://sas-ecom-backend-mcif.vercel.app/categories');
+            const response = await axios.get('https://ecom-backend25-6mf29p2bu-nileshs-projects-68bb2634.vercel.app/categories');
             setProducts(response.data);
             setLoading(false);
-            // console.log(response.data);
+            console.log("response data is ++++++",response.data);
         } catch (error) {
             console.log("Error is", error);
         }
@@ -39,7 +39,7 @@ export const Products = () => {
             <p>{product.description}</p>
             <div className="image">
               <img 
-                src={`https://sas-ecom-backend-mcif.vercel.app/uploads/${product.image_path}`} 
+                src={`http://192.168.0.107:8000/uploads/${product.image_path}`} 
                 alt={product.id}
                 onError={(e) => { e.target.src = '/assets/defaultImage.jpg' }}
               />

@@ -23,7 +23,7 @@ export const Subcategory = ({ toggleModal}) => {
             
             <div className='content1'>
                 <div className="image1">
-                    <img src={`https://sas-ecom-backend-mcif.vercel.app/uploads/${product.image_path}`} />
+                    <img src={`http://192.168.0.107:8000/uploads/${product.image_path}`} />
                 </div>
             </div>
             <div className="categoryContainer">
@@ -40,7 +40,7 @@ export const Subcategory = ({ toggleModal}) => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get(`https://sas-ecom-backend-mcif.vercel.app/products/${encodedName.toString()}`);
+            const response = await axios.get(`http://192.168.0.107:8000/products/${encodedName.toString()}`);
             setProducts(response.data);
             setLoading(false);
             // console.log("products =====>", response.data);
