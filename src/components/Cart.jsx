@@ -45,7 +45,7 @@ export const Cart = ({handleContactClick}) => {
                         <div className='cardContainerCart' key={product.id}>
                             <div className='content1'>
                                 <div className="image1">
-                                    <img src={`https://sas-ecom-backend-mcif.vercel.app/uploads/${product.image_path}`} />
+                                    <img src={`https://ecombackend03-git-main-nileshs-projects-68bb2634.vercel.app/uploads/${product.image_path}`} />
                                 </div>
                             </div>
                             <div className="categoryContainer">

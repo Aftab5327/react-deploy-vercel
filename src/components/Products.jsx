@@ -39,7 +39,7 @@ export const Products = () => {
             <p>{product.description}</p>
             <div className="image">
               <img 
-                src={`http://192.168.0.107:8000/uploads/${product.image_path}`} 
+                src={`https://ecombackend03-git-main-nileshs-projects-68bb2634.vercel.app/uploads/${product.image_path}`} 
                 alt={product.id}
                 onError={(e) => { e.target.src = '/assets/defaultImage.jpg' }}
               />

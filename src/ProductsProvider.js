@@ -34,7 +34,7 @@ export const ProductsProvider = ({ children }) => {
                 const productRequests = categories.map((category) => {
                     const encodeName = encodeURIComponent(category.name);
                     // console.log('encode Name is:', encodeName);
-                    return axios.get(`https://sas-ecom-backend-mcif.vercel.app/products/${encodeName}`);
+                    return axios.get(`https://ecombackend03-git-main-nileshs-projects-68bb2634.vercel.app/products/${encodeName}`);
                 });
         
                 const responses = await Promise.all(productRequests);
