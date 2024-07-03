@@ -15,7 +15,7 @@ export const ProductsProvider = ({ children }) => {
     // console.log('encodeName is',encodedName)
     const fetchCategories = async () => {
         try {
-            const response = await axios.get('https://ecom-backend25-6mf29p2bu-nileshs-projects-68bb2634.vercel.app/categories');
+            const response = await axios.get('https://ecombackend03-git-main-nileshs-projects-68bb2634.vercel.app/categories');
             setCategories(response.data);
             setLoading(false);
         } catch (error) {

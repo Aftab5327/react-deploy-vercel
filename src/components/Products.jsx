@@ -9,12 +9,12 @@ export const Products = () => {
     const [loading, setLoading] = useState(true);
     const fetchData = async () => {
         try {
-            const response = await axios.get('https://ecom-backend25-6mf29p2bu-nileshs-projects-68bb2634.vercel.app/categories');
+            const response = await axios.get('https://ecombackend03-git-main-nileshs-projects-68bb2634.vercel.app/categories');
             setProducts(response.data);
             setLoading(false);
-            console.log("response data is ++++++",response.data);
+            console.log("response data is ++++++------------ ",response.data);
         } catch (error) {
-            console.log("Error is", error);
+            console.log("Error is --------", error);
         }
     };
 
