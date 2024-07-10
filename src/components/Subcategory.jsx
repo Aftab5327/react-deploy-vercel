@@ -23,7 +23,7 @@ export const Subcategory = ({ toggleModal}) => {
             
             <div className='content1'>
                 <div className="image1">
-                    <img src={`https://ecombackend03-git-main-nileshs-projects-68bb2634.vercel.app/uploads/${product.image_path}`} />
+                    <img src={`https://sasecombackend02-git-main-nileshs-projects-68bb2634.vercel.app/uploads/${product.image_path}`} />
                 </div>
             </div>
             <div className="categoryContainer">
@@ -40,7 +40,7 @@ export const Subcategory = ({ toggleModal}) => {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get(`https://ecombackend03-git-main-nileshs-projects-68bb2634.vercel.app/products/${encodedName.toString()}`);
+            const response = await axios.get(`https://sasecombackend02-git-main-nileshs-projects-68bb2634.vercel.app/products/${encodedName.toString()}`);
             setProducts(response.data);
             setLoading(false);
             // console.log("products =====>", response.data);
