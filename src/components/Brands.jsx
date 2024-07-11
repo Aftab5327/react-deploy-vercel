@@ -31,7 +31,7 @@ export const Brands = () => {
         </div>
         <div className="innerContainer">
           <div className="productContainer">
-            <img src="/assets/klemsan.png" alt="klemsan" width="100%" height="auto" />
+            <img src="/assets/Klemsan.png" alt="Klemsan" width="100%" height="auto" />
           </div>
         </div>
         <div className="innerContainer">
