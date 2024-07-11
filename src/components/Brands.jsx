@@ -39,7 +39,7 @@ export const Brands = () => {
             <img src="/assets/abb.png" alt="ABB" width="100%" height="auto" />
           </div>
         </div>
-        <div className="innerContainer">
+        {/* <div className="innerContainer">
           <div className="productContainer">
             <img src="/assets/Siemens_AG_logo.png" alt="Siemens" width="100%" height="auto" />
           </div>
@@ -58,7 +58,7 @@ export const Brands = () => {
           <div className="productContainer">
             <img src="/assets/abb.png" alt="ABB" width="100%" height="auto" />
           </div>
-        </div>
+        </div> */}
         {/* <div className="innerContainer">
           <div className="productContainer">
             <img src="/assets/abb.png" alt="ABB" width="100%" height="auto" />
