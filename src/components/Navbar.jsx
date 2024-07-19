@@ -30,7 +30,7 @@ export const Navbar = ({handleContactClick}) => {
 
   const fetchProducts = async (categoryName) => {
     try {
-      const response = await axios.get(`https://sasecombackend02-git-main-nileshs-projects-68bb2634.vercel.app/products/${encodeURIComponent(categoryName)}`);
+      const response = await axios.get(`https://ecombackend1-git-main-nileshs-projects-68bb2634.vercel.app/products/${encodeURIComponent(categoryName)}`);
       setDropdownProducts(response.data);
       console.log("response is", response.data);
     } catch (err) {

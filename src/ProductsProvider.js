@@ -15,7 +15,7 @@ export const ProductsProvider = ({ children }) => {
     // console.log('encodeName is',encodedName)
     const fetchCategories = async () => {
         try {
-            const response = await axios.get('https://sasecombackend02-git-main-nileshs-projects-68bb2634.vercel.app/categories');
+            const response = await axios.get('https://ecombackend1-git-main-nileshs-projects-68bb2634.vercel.app/categories');
             setCategories(response.data);
             setLoading(false);
         } catch (error) {
@@ -34,7 +34,7 @@ export const ProductsProvider = ({ children }) => {
                 const productRequests = categories.map((category) => {
                     const encodeName = encodeURIComponent(category.name);
                     // console.log('encode Name is:', encodeName);
-                    return axios.get(`https://sasecombackend02-git-main-nileshs-projects-68bb2634.vercel.app/categories/products/${encodeName}`);
+                    return axios.get(`https://ecombackend1-git-main-nileshs-projects-68bb2634.vercel.app/products/${encodeName}`);
                 });
         
                 const responses = await Promise.all(productRequests);
